@@ -32,7 +32,19 @@ To get a local copy up and running follow these simple steps.
   ```sh
    yarn dev
    ```
-
+### DB Migration
+1. Generate migration
+  ```sh
+   yarn typeorm migrate:genereate -[FILE_NAME]
+   ```
+2. Run migration
+  ```sh
+   yarn typeorm migrate:run
+   ```
+3. Revert migration
+  ```sh
+   yarn typeorm migrate:revert
+   ```
 ### Build
   ```sh
    yarn build
